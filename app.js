@@ -13,7 +13,7 @@ prev.addEventListener('click', function () {
 });
 
 const name = document.querySelector('.name');
-name.style.color = 'red';
+name.style.color = 'rgba(69, 184, 113, 1)';
 
 const button = document.querySelector('button');
 button.style.background = 'transparent';
