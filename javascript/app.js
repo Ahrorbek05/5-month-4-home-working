@@ -1,15 +1,29 @@
 let next = document.querySelector('.next');
 let prev = document.querySelector('.prev');
+const body = document.querySelector('body');
+const bodybtns = document.querySelectorAll('body #bodybtns');
+bodybtns.addEventListener('click', function () {
+  body.style.background = 'red';
+})
+bodybtns.addEventListener('click', function () {
+    body.style.background = 'aqua';
+  })
+  bodybtns.addEventListener('click', function () {
+    body.style.background = 'green';
+  })
 
 
 next.addEventListener('click', function () {
     let items = document.querySelectorAll('.item')
     document.querySelector('.slide').appendChild(items[0])
+items[1].style.color = 'red';
+
 });
 
 prev.addEventListener('click', function () {
     let items = document.querySelectorAll('.item')
     document.querySelector('.slide').prepend(items[items.length - 1])
+    // items[1].style.color = 'blue'
 });
 
 const name = document.querySelector('.name');
