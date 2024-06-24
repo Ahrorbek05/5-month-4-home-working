@@ -1,16 +1,5 @@
 let next = document.querySelector('.next');
 let prev = document.querySelector('.prev');
-const body = document.querySelector('body');
-const bodybtns = document.querySelectorAll('body #bodybtns');
-bodybtns.addEventListener('click', function () {
-  body.style.background = 'red';
-})
-bodybtns.addEventListener('click', function () {
-    body.style.background = 'aqua';
-  })
-  bodybtns.addEventListener('click', function () {
-    body.style.background = 'green';
-  })
 
 
 next.addEventListener('click', function () {
