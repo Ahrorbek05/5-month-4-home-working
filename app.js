@@ -1,1 +1,26 @@
-// 1.
+let next = document.querySelector('.next');
+let prev = document.querySelector('.prev');
+
+
+next.addEventListener('click', function () {
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').appendChild(items[0])
+});
+
+prev.addEventListener('click', function () {
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').prepend(items[items.length - 1])
+});
+
+const name = document.querySelector('.name');
+name.style.color = 'red';
+
+const button = document.querySelector('button');
+button.style.background = 'transparent';
+button.style.border = '1px solid #fff';
+button.style.color = '#fff';
+button.style.fontFamily = 'sans serif';
+button.style.background = 'rgba(69, 184, 113, 1)';
+button.style.borderRadius = '8px';
+
+
